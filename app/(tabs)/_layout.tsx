@@ -1,12 +1,24 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import { COLORS } from 'constants/color';
 
 export default function TabsLayout() {
   return (
     <Tabs screenOptions={{ 
-      tabBarShowLabel: false,
-      tabBarActiveTintColor: '#0a7ea4', 
+      tabBarShowLabel: false, 
+      headerShown:false,
+      tabBarActiveTintColor:COLORS.primary,
+      tabBarInactiveTintColor:COLORS.grey,
+      tabBarStyle:{
+        backgroundColor:'black',
+        borderTopWidth:0,
+        position:'absolute',
+        elevation:0,
+        height:50,
+        paddingVertical:20,
+        marginBottom:50,
+      }
     }}>
       <Tabs.Screen
         name="index"
@@ -26,7 +38,7 @@ export default function TabsLayout() {
         name="create"
         options={{
           title: 'Create',
-          tabBarIcon: ({ color, size }) => <Ionicons name="add-circle" size={size} color={color} />,
+          tabBarIcon: ({ color, size }) => <Ionicons name="add-circle" size={size} color={COLORS.primary} />,
         }}
       />
       <Tabs.Screen
