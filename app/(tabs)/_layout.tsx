@@ -17,7 +17,7 @@ export default function TabsLayout() {
         elevation:0,
         height:50,
         paddingVertical:20,
-        marginBottom:50,
+        marginBottom:10,
       }
     }}>
       <Tabs.Screen
