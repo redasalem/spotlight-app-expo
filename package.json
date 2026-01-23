@@ -11,8 +11,8 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@clerk/clerk-expo": "^2.19.18",
-    "@clerk/types": "^4.101.11",
+    "@clerk/clerk-expo": "^2.19.19",
+    "@clerk/types": "^4.101.12",
     "@tailwindcss/postcss": "^4.1.13",
     "expo": "^54.0.0",
     "expo-router": "~6.0.21",
